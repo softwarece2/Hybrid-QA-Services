@@ -1,0 +1,7 @@
+-- Date: 14-08-26
+-- Truncate tables related to sub slip and further
+TRUNCATE TABLE tdms.submission_slip, tdms.offer_letter, tdms.merge_submission_slip, tdms.warrant_allotment, tdms.notification, tdms.line_item_serial_no_history CASCADE;
+
+-- set status of warrants as created
+UPDATE tdms.category
+SET status = 14;

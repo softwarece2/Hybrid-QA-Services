@@ -1,0 +1,187 @@
+ALTER TABLE IF EXISTS tdms.warrant_certificate
+    ADD CONSTRAINT warrant_type_fk FOREIGN KEY (warrant_type)
+    REFERENCES mdms.warrant_type (id) MATCH SIMPLE
+    ON UPDATE NO ACTION
+    ON DELETE NO ACTION
+    NOT VALID;
+	
+	
+	
+	
+	
+	ALTER TABLE tdms.internal_inote_line_item
+    ALTER COLUMN tendered TYPE numeric;
+
+ALTER TABLE IF EXISTS tdms.internal_inote_line_item
+    ALTER COLUMN tendered SET STORAGE MAIN;
+
+ALTER TABLE tdms.internal_inote_line_item
+    ALTER COLUMN accepted TYPE numeric;
+
+ALTER TABLE IF EXISTS tdms.internal_inote_line_item
+    ALTER COLUMN accepted SET STORAGE MAIN;
+
+ALTER TABLE tdms.internal_inote_line_item
+    ALTER COLUMN rejected TYPE numeric;
+
+ALTER TABLE IF EXISTS tdms.internal_inote_line_item
+    ALTER COLUMN rejected SET STORAGE MAIN;
+
+ALTER TABLE tdms.internal_inote_line_item
+    ALTER COLUMN ledger_folio TYPE numeric;
+
+ALTER TABLE IF EXISTS tdms.internal_inote_line_item
+    ALTER COLUMN ledger_folio SET STORAGE MAIN;
+
+ALTER TABLE tdms.internal_inote_line_item
+    ALTER COLUMN qty_accepted_to_date TYPE numeric;
+
+ALTER TABLE IF EXISTS tdms.internal_inote_line_item
+    ALTER COLUMN qty_accepted_to_date SET STORAGE MAIN;
+
+ALTER TABLE tdms.internal_inote_line_item
+    ALTER COLUMN order_qty TYPE numeric;
+
+ALTER TABLE IF EXISTS tdms.internal_inote_line_item
+    ALTER COLUMN order_qty SET STORAGE MAIN;
+	
+	
+	
+	
+	
+	
+	
+	
+	ALTER TABLE tdms.category
+    ALTER COLUMN qty TYPE numeric;
+
+ALTER TABLE IF EXISTS tdms.category
+    ALTER COLUMN qty SET STORAGE MAIN;
+	
+	
+	
+	
+	
+	ALTER TABLE tdms.sslip_line_item
+    ALTER COLUMN offered_qty TYPE numeric;
+
+ALTER TABLE IF EXISTS tdms.sslip_line_item
+    ALTER COLUMN offered_qty SET STORAGE MAIN;
+
+ALTER TABLE tdms.sslip_line_item
+    ALTER COLUMN cleared_qty TYPE numeric;
+
+ALTER TABLE IF EXISTS tdms.sslip_line_item
+    ALTER COLUMN cleared_qty SET STORAGE MAIN;
+
+ALTER TABLE tdms.sslip_line_item
+    ALTER COLUMN remaining_qty TYPE numeric;
+
+ALTER TABLE IF EXISTS tdms.sslip_line_item
+    ALTER COLUMN remaining_qty SET STORAGE MAIN;
+	
+	
+	
+	
+	
+	
+	
+	ALTER TABLE tdms.inote_line_item
+    ALTER COLUMN tendered TYPE numeric;
+
+ALTER TABLE IF EXISTS tdms.inote_line_item
+    ALTER COLUMN tendered SET STORAGE MAIN;
+
+ALTER TABLE tdms.inote_line_item
+    ALTER COLUMN accepted TYPE numeric;
+
+ALTER TABLE IF EXISTS tdms.inote_line_item
+    ALTER COLUMN accepted SET STORAGE MAIN;
+
+ALTER TABLE tdms.inote_line_item
+    ALTER COLUMN rejected TYPE numeric;
+
+ALTER TABLE IF EXISTS tdms.inote_line_item
+    ALTER COLUMN rejected SET STORAGE MAIN;
+
+ALTER TABLE tdms.inote_line_item
+    ALTER COLUMN ledger_folio TYPE numeric;
+
+ALTER TABLE IF EXISTS tdms.inote_line_item
+    ALTER COLUMN ledger_folio SET STORAGE MAIN;
+
+ALTER TABLE tdms.inote_line_item
+    ALTER COLUMN qty_accepted_to_date TYPE numeric;
+
+ALTER TABLE IF EXISTS tdms.inote_line_item
+    ALTER COLUMN qty_accepted_to_date SET STORAGE MAIN;
+
+ALTER TABLE tdms.inote_line_item
+    ALTER COLUMN order_qty TYPE numeric;
+
+ALTER TABLE IF EXISTS tdms.inote_line_item
+    ALTER COLUMN order_qty SET STORAGE MAIN;
+	
+	
+	
+	
+	
+	
+	ALTER TABLE tdms.supply_order
+    ALTER COLUMN total_qty TYPE numeric;
+
+ALTER TABLE IF EXISTS tdms.supply_order
+    ALTER COLUMN total_qty SET STORAGE MAIN;
+
+ALTER TABLE tdms.supply_order
+    ALTER COLUMN value TYPE numeric;
+
+ALTER TABLE IF EXISTS tdms.supply_order
+    ALTER COLUMN value SET STORAGE MAIN;
+	
+	
+	
+	
+	
+	
+	ALTER TABLE tdms.ol_line_item
+    ALTER COLUMN offered_qty TYPE numeric;
+
+ALTER TABLE IF EXISTS tdms.ol_line_item
+    ALTER COLUMN offered_qty SET STORAGE MAIN;
+	
+	
+	
+	
+	
+	ALTER TABLE tdms.qcc
+    ALTER COLUMN qty_tendered TYPE numeric;
+
+ALTER TABLE IF EXISTS tdms.qcc
+    ALTER COLUMN qty_tendered SET STORAGE MAIN;
+	
+	
+	
+	
+	
+	ALTER TABLE tdms.so_line_item
+    ALTER COLUMN unit_cost TYPE numeric;
+
+ALTER TABLE IF EXISTS tdms.so_line_item
+    ALTER COLUMN unit_cost SET STORAGE MAIN;
+
+ALTER TABLE tdms.so_line_item
+    ALTER COLUMN order_qty TYPE numeric;
+
+ALTER TABLE IF EXISTS tdms.so_line_item
+    ALTER COLUMN order_qty SET STORAGE MAIN;
+
+ALTER TABLE tdms.so_line_item
+    ALTER COLUMN item_value TYPE numeric;
+
+ALTER TABLE IF EXISTS tdms.so_line_item
+    ALTER COLUMN item_value SET STORAGE MAIN;
+	
+	
+	
+	

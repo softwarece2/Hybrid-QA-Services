@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: olms-ate-services
+  main:
+    allow-circular-references : true
+server:
+  port: 7071
+  
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8762/eureka}
+  
+bel:
+  jwt:
+    secret : sj^*d29!*u@b^e
+    expirationMs: 28800000
+    
+file:
+  upload-dir : /olms-uploads
+  domain-url: http://172.44.106.10:8766/
+  camera-server-ip: 200.0.0.124
+  camera-domain-url: http://172.195.123.75:5001/

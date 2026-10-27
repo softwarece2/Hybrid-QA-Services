@@ -1,0 +1,10 @@
+.metadata*
+*.class
+*.prefs
+*.class
+olms-master-services/.factorypath
+*.xml
+*.classpath
+*/target/*
+*.project
+*/.factorypath

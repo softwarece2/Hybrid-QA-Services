@@ -1,0 +1,79 @@
+
+package in.co.bel.olms.transaction.dto;
+
+import java.util.List;
+
+import lombok.Data;
+
+@Data
+public class SubSlipDto {
+	
+	private Integer id;
+	private String name;
+	private String soNumber;
+	private String olNumber;
+	private String salesGroupName;
+	private String projectName;
+	private String statusStr;
+	private String statusId;
+	private Integer employeeId;
+	private Integer consigneeId;
+	private String inspectorName;
+	private Integer secOfficerId;
+	private String secOfficerName;
+	private Integer dcqaoId;
+	private String dcqaoName;
+	private Integer jcqaoId;
+	private String jcqaoName;
+	private Integer ccqaoId;
+	private String ccqaoName;
+	private String priority;
+	private String issueLevel;
+	private Integer saleOrderId;
+	private Integer saleOrderNo;
+	private String saleOrderNoStr;
+	private Integer totalItems;
+	private String totalValue;
+	private String soDate;
+	private String offerDate;
+	private String fileNo;
+	private String status;
+	private Integer iNoteTypeId;
+	private Boolean isReturned;
+	private Boolean isScrunityDone;
+	private Boolean isQinAvlbl;
+	private Integer inspectionLevelId;
+	private String inspectionLevelStr;
+	private List<SubSlipLineItemDto> subSlipLineItemDtos;
+	private String storesDescription;
+	private String remarks;
+	private String consigneeAddress;
+	private String indentDate;
+	private String organizationName;
+	private List<String> olAttachments;
+	private List<String> preInspectionReports;
+	private String inoteStatus;
+	private String inoteDate;
+	private String fileNoteStatus;
+	private Boolean clearanceStatus;
+	private Integer soId;
+	private String olStatus;
+	private String receivedDate;
+	private Boolean isNotified;
+	private Boolean isGcc;
+	private String soType;
+	private Boolean isCrossCheckAllotted;
+	private Boolean isSurpriseCheckAllotted;
+	private Boolean inoteApproval;
+	private String inoteApprovalRemarks;
+	private Boolean isInternal;
+	private Integer lotNumber;
+	private String allotedToName;
+	private Integer warrantId;
+	private String warrant;
+	private Integer soLiId;
+	private String epCode;
+	private String workOrderNo;
+	private String nomenclature;
+	private String inspAuthority;
+}

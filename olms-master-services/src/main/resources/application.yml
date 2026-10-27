@@ -1,0 +1,46 @@
+spring:
+  application:
+    name: olms-master-services
+  main:
+    allow-circular-references : true
+server:
+  port: 8087
+  
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8762/eureka}
+
+management:
+  info:
+    env:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: "info, health"
+    health:
+      show-details: "ALWAYS"
+info:
+  application:
+    name: ${spring.application.name}
+    description: Master Module Services
+    version: '@project.version@'
+    spring-cloud-version: '@spring-cloud.version@'
+
+bel:
+  jwt:
+    secret : sj^*d29!*u@b^e
+    expirationMs: 28800000
+
+springdoc:
+  swagger-ui:
+    enabled: true
+    path: /wiqas-master-ui.html
+    tryItOutEnabled: false
+    filter: true
+    syntaxHighlight:
+      activated: true
+      
+file:
+  camera-domain-url: http://172.195.123.75:5001/

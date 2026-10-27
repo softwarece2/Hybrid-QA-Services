@@ -1,0 +1,118 @@
+package in.co.bel.olms.transaction.dto;
+
+import java.math.BigDecimal;
+import java.util.Date;
+import java.util.List;
+
+import lombok.Data;
+
+@Data
+public class INoteDto {
+	
+	private String supplyOrderNo;
+	private Date supplyOrderDate;
+	private String description;
+	private String contractorName;
+	private String contractorAddress;
+	private String indentor;
+	private String indentNo;
+	private Date indentDate;
+	private String consignee;
+	private Date  inspectionStart;
+	private Date  inspectionEnd;
+	private Integer olId;
+	private String offerLetterNo;
+	private Date offerLetterDate;
+	private String orgName;
+	private String remarks;
+	private String empName;
+	private String empDesigation;
+	private String empRole;
+	private String empNameHindi;
+	private String empDesignationHindi;
+	private String emproleHindi;
+	private String createdDate;
+	private String soDescription;
+	private Integer inoteTypeId;
+	private List<INoteLineItemDto> iNoteLineItems;
+	private boolean existing;
+	private Date inoteDate;
+	private String ddExtLetterDate;
+	private String ddExtLetterNo;
+	private Date newDd;
+	private String iNoteNo;
+	private String prevINoteNo;
+	private String prevINoteDate;
+	private String cqaoApprovalDate;
+	private String cqaoRemarks;
+	private String fileNo;
+	private String typeOfDelivery;
+	private String typeOfDeliveryINote;
+	private String sealNo;
+	private String olDateStr;
+	private Integer inspectionFileNoteId;
+	private String amendment;
+	private String amendmentNo;
+	private Date amendmentDate;
+	private Integer inoteId;
+	private String inspectionPlace;
+	private String suppliedWithinDd;
+	private String suppliedWithinExtDd;
+	private String suppliedUnderFranking;
+	private String penaltyLetterNo;
+	private String dispatchMode;
+	private String verifiedBy;
+	private String inspectedBy;
+	private String station;
+	private String debitHead;
+	private String warranty;
+	private String rejectionVoucher;
+	private String rejectionOn;
+	private String advNoDate;
+	private String inspectionAgency;
+	private String warrantyNo;
+	private String workOrderNo;
+	private String rfEstNo;
+	private String epCode;
+	private Date submittedDatetime;
+	private Integer submittedById;
+	private Integer createdById;
+	private String submittedByName;
+
+	private String submittedByDesignation;
+
+	private String projectDetails;
+	private String inoteTypeName;
+	private BigDecimal orderedQty;
+	private BigDecimal clearedQty;
+	private Integer internalInoteId;
+	private String deliveryDate;
+	private String nomenclature;
+	private String supplyOrderDateFormatted;
+	private String offerLetterDateFormatted;
+	private String inoteDateFormatted;
+	private Integer revNo;
+	private String wtIssueDate;
+	private String estDate;
+	private String drawingNo;
+	private String referenceNo;
+	private Integer inspectionAgencyId;
+	private Integer mergeSubSlipId;
+	private String prodUserName;
+	private Integer prodUserId;
+	private String OrderTypeNo;
+	private String OrderTypeDate;
+	private String lineItemSNo;
+	private List<String> passedRegNos;
+	private List<String> failedRegNos;
+	private String operationNo;
+	private BigDecimal acceptedQty;
+	private BigDecimal rejectedQty;
+	private String indentDateStr;
+	private String cqaeInoteNo;
+	private String section;
+	private String secCode;
+	private Integer registrationNo;
+	private String qacDistribution;
+	
+}

@@ -1,0 +1,50 @@
+spring:
+  application:
+    name: olms-tran-services
+  main:
+    allow-circular-references : true
+  servlet:
+    multipart:
+      max-file-size: 2500MB
+      max-request-size: 2500MB
+server:
+  port: 8088
+  forward-headers-strategy: framework
+  
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:8762/eureka}
+bel:
+  jwt:
+    secret : sj^*d29!*u@b^e
+    expirationMs: 28800000
+file:
+  upload-dir : /olms-uploads
+  domain-url: http://172.195.120.253:8766/
+
+management:
+  info:
+    env:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: "info, health"
+    health:
+      show-details: "ALWAYS"
+info:
+  application:
+    name: ${spring.application.name}
+    description: WIQAS Transaction Module Services
+    version: '@project.version@'
+    spring-cloud-version: '@spring-cloud.version@'
+
+springdoc:
+  swagger-ui:
+    enabled: true
+    path: /wiqas-tran-ui.html
+    tryItOutEnabled: false
+    filter: true
+    syntaxHighlight:
+      activated: true
